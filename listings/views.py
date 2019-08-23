@@ -1,6 +1,9 @@
 from django.core.paginator import Paginator
 from django.shortcuts import get_object_or_404, render
 
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+
 from .models import Listing
 
 
@@ -12,7 +15,8 @@ def index(request):
     paged_listings = paginator.get_page(page)
 
     context = {
-        'listings': paged_listings
+        'listings': paged_listings,
+
     }
 
     return render(request, 'listings/listings.html', context)
@@ -21,7 +25,8 @@ def index(request):
 def listing(request, listing_id):
     listing = get_object_or_404(Listing, pk=listing_id)
     context = {
-        'listing': listing
+        'listing': listing,
+        'listing_id': listing_id
     }
     return render(request, 'listings/listing.html', context)
 
