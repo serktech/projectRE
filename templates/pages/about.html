@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h2>We Search For The Perfect Home</h2>
+                    <h2>We Search For The Perfect Couch</h2>
                     <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
                     <img src="{% static 'img/about.jpg' %}" alt="">
                     <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia
@@ -35,9 +35,9 @@
                     {% if mvp_realtors %}
                         {% for realtor in mvp_realtors %}
                             <div class="card">
-                                <img class="card-img-top" src="{{ realtor.photo.url }}" alt="Seller of the month">
+                                <img class="card-img-top" src="{{ realtor.photo.url }}" alt="Coucher of the month">
                                 <div class="card-body">
-                                    <h5 class="card-title">Seller Of The Month</h5>
+                                    <h5 class="card-title">Coucher Of The Month</h5>
                                     <h6 class="text-secondary">{{ realtor.name }}</h6>
                                     <p class="card-text">{{ realtor.description }}
                                     </p>
@@ -53,11 +53,11 @@
 
     <!-- Work -->
     <section id="work" class="bg-dark text-white text-center">
-        <h2 class="display-4">We Work For You</h2>
+        <h2 class="display-4">Our Couch For You</h2>
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at
             similique!</h4>
         <hr>
-        <a href="listings.html" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+        <a href="listings.html" class="btn btn-secondary text-white btn-lg">View Our Featured Couches</a>
     </section>
 
     <!-- Team -->
@@ -71,7 +71,7 @@
                             <img src="{{ realtor.photo.url }}" alt="" class="rounded-circle mb-3">
                             <h4>{{ realtor.name }}</h4>
                             <p class="text-success">
-                                <i class="fas fa-award text-success mb-3"></i> Realtor</p>
+                                <i class="fas fa-award text-success mb-3"></i> Coucher</p>
                             <hr>
                             <p>
                                 <i class="fas fa-phone"></i> {{ realtor.phone }}</p>
