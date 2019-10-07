@@ -22,14 +22,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h2>We Search For The Perfect Couch</h2>
-                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+                    <h2>We Search For The Perfect Host</h2>
+                    <p class="lead">The community pages are handy for getting real-time information from other budget travelers about upcoming destinations.</p>
                     <img src="{% static 'img/about.jpg' %}" alt="">
-                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia
-                        repudiandae ad saepe ex, amet
-                        neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis?
-                        Exercitationem at quaerat
-                        commodi id libero eveniet harum perferendis laborum molestias quia.</p>
+                    <p class="mt-4">The groups are operated by local volunteers known as
+                        ambassadors. Local groups often have informal meetings and gatherings. Even when not traveling,
+                        you can use the groups and ambassadors to meet fellow travelers and fun people at home.</p>
                 </div>
                 <div class="col-md-4">
                     {% if mvp_realtors %}
@@ -37,7 +35,7 @@
                             <div class="card">
                                 <img class="card-img-top" src="{{ realtor.photo.url }}" alt="Coucher of the month">
                                 <div class="card-body">
-                                    <h5 class="card-title">Coucher Of The Month</h5>
+                                    <h5 class="card-title">Host Of The Month</h5>
                                     <h6 class="text-secondary">{{ realtor.name }}</h6>
                                     <p class="card-text">{{ realtor.description }}
                                     </p>
@@ -54,8 +52,8 @@
     <!-- Work -->
     <section id="work" class="bg-dark text-white text-center">
         <h2 class="display-4">Our Couch For You</h2>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at
-            similique!</h4>
+        <h4>The community pages are handy for getting real-time information from other budget travelers about upcoming
+            destinations.</h4>
         <hr>
         <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Our Featured Couches</a>
     </section>
@@ -63,7 +61,7 @@
     <!-- Team -->
     <section id="team" class="py-5">
         <div class="container">
-            <h2 class="text-center">Our Couchers</h2>
+            <h2 class="text-center">Our Hosts</h2>
             <div class="row text-center">
                 {% if realtors %}
                     {% for realtor in realtors %}
@@ -71,7 +69,7 @@
                             <img src="{{ realtor.photo.url }}" alt="" class="rounded-circle mb-3">
                             <h4>{{ realtor.name }}</h4>
                             <p class="text-success">
-                                <i class="fas fa-award text-success mb-3"></i> Coucher</p>
+                                <i class="fas fa-award text-success mb-3"></i> Host</p>
                             <hr>
                             <p>
                                 <i class="fas fa-phone"></i> {{ realtor.phone }}</p>
