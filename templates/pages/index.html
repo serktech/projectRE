@@ -41,7 +41,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
+                            <button class="btn btn-secondary btn-block mt-4" type="submit">Search</button>
                         </form>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                                 <img class="card-img-top" src="{{ listing.photo_main.url }}" alt="">
                                 <div class="card-img-overlay">
                                     <h2>
-                                        <span class="badge badge-secondary text-white">${{ listing.price | intcomma }}</span>
+                                        <span class="badge badge-secondary text-white">Guests: {{ listing.guests | intcomma }}</span>
                                     </h2>
                                 </div>
                                 <div class="card-body">
@@ -75,24 +75,16 @@
                                     <hr>
                                     <div class="row py-2 text-secondary">
                                         <div class="col-6">
-                                            <i class="fas fa-th-large"></i> Sqft: {{ listing.sqft}}
+                                            <i class="fas fa-clock"></i> Last-Minute Requests: {{ listing.lastminute}}
                                         </div>
-                                        <div class="col-6">
-                                            <i class="fas fa-car"></i> Garage: {{ listing.garage}}
-                                        </div>
-                                    </div>
-                                    <div class="row py-2 text-secondary">
                                         <div class="col-6">
                                             <i class="fas fa-bed"></i> Bedrooms: {{ listing.bedrooms}}
-                                        </div>
-                                        <div class="col-6">
-                                            <i class="fas fa-bath"></i> Bathrooms: {{ listing.bathrooms}}
                                         </div>
                                     </div>
                                     <hr>
                                     <div class="row py-2 text-secondary">
                                         <div class="col-6">
-                                            <i class="fas fa-user"></i> {{ listing.realtor}}
+                                            <i class="fas fa-user-alt"></i> {{ listing.realtor}}
                                         </div>
                                     </div>
                                     <div class="row text-secondary pb-2">

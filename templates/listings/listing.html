@@ -96,46 +96,42 @@
                         <div class="col-md-6">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item text-secondary">
-                                    <i class="fas fa-money-bill-alt"></i> Asking Price:
-                                    <span class="float-right">${{ listing.price | intcomma }}</span>
+                                    <i class="fas fa-user-check"></i> Guests:
+                                    <span class="float-right">{{ listing.guests }}</span>
                                 </li>
                                 <li class="list-group-item text-secondary">
                                     <i class="fas fa-bed"></i> Bedrooms:
                                     <span class="float-right">{{ listing.bedrooms }}</span>
                                 </li>
                                 <li class="list-group-item text-secondary">
-                                    <i class="fas fa-bath"></i> Bathrooms:
-                                    <span class="float-right">{{ listing.bathrooms }}</span>
+                                    <i class="fas fa-clock"></i> Last-Minute Requests:
+                                    <span class="float-right">{{ listing.lastminute }}</span>
                                 </li>
                                 <li class="list-group-item text-secondary">
-                                    <i class="fas fa-car"></i> Garage:
-                                    <span class="float-right">{{ listing.garage }}
-                  </span>
+                                    <i class="fas fa-genderless"></i> Preferred Gender to Host:
+                                    <span class="float-right">{{ listing.gender }}</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item text-secondary">
-                                    <i class="fas fa-th-large"></i> Square Feet:
-                                    <span class="float-right">{{ listing.sqft }}</span>
+                                    <i class="fas fa-child"></i> Kid Friendly?
+                                    <span class="float-right">{{ listing.kidfriendly }}</span>
                                 </li>
                                 <li class="list-group-item text-secondary">
-                                    <i class="fas fa-square"></i> Lot Size:
-                                    <span class="float-right">{{ listing.lot_size }} Acres
-                  </span>
+                                    <i class="fas fa-smoking-ban"></i> Smoking Allowed?
+                                    <span class="float-right">{{ listing.smokingallow }}</span>
                                 </li>
                                 <li class="list-group-item text-secondary">
                                     <i class="fas fa-calendar"></i> Listing Date:
                                     <span class="float-right">{{ listing.list_date }}</span>
                                 </li>
                                 <li class="list-group-item text-secondary">
-                                    <i class="fas fa-bed"></i> Realtor:
+                                    <i class="fas fa-user-alt"></i> Host:
                                     <span class="float-right">{{ listing.realtor }}
-                  </span>
+                                    </span>
                                 </li>
-
-
                             </ul>
                         </div>
                     </div>
@@ -151,7 +147,7 @@
                     <div class="card mb-3">
                         <img class="card-img-top" src="{{ listing.realtor.photo.url }}" alt="">
                         <div class="card-body">
-                            <h5 class="card-title">Property Realtor</h5>
+                            <h5 class="card-title">Host</h5>
                             <h6 class="text-secondary">{{ listing.realtor }}</h6>
                         </div>
                     </div>
@@ -184,7 +180,7 @@
                         <input type="hidden" name="realtor_email" value="{{ listing.realtor.email }}">
                         <input type="hidden" name="listing_id" value="{{ listing.id }}">
                         <div class="form-group">
-                            <label for="property_name" class="col-form-label">Property:</label>
+                            <label for="property_name" class="col-form-label">Couch:</label>
                             <input type="text" name="listing" class="form-control" value="{{ listing.title }}">
                         </div>
                         <div class="form-group">

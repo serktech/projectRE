@@ -3,7 +3,7 @@ from .models import Listing
 
 
 class ListingAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'price', 'list_date', 'realtor')
+    list_display = ('id', 'title', 'list_date', 'realtor')
     list_display_links = ('id', 'title')
     list_filter = ('realtor',)
     search_fields = ('title', 'description', 'address', 'city', 'state', 'zipcode')

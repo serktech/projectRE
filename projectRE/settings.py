@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'projectRE.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btredb',
+        'NAME': 'room',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'localhost'
