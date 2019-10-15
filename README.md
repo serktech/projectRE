@@ -2,7 +2,7 @@
 
 About
 ------------
-Used Python to build and deploy a room sharing management system application that allows rent and share room for short term, using the Django framework and PostgreSQL on AWS EC2.
+Used Python to build and deploy a room sharing management system application that allows share room for short term, using the Django framework and PostgreSQL on AWS EC2.
 
 Example
 -------
