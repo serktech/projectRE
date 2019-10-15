@@ -7,7 +7,7 @@ Used Python to build and deploy a room sharing management system application tha
 Example
 -------
 
-Click the image below for an interactive example:
+Click the image below for an interactive example (Requirements) :
 
 [![img](https://serhiyyarosh.com/img/room2share.jpg)](https://serhiyyarosh.com/room2share.html)
 
